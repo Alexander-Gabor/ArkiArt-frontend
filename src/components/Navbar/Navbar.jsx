@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import Logo from '../../assets/images/arkiart-logo4.png';
 import Heart from '../../assets/images/heart-svg.svg';
 import Shopping from '../../assets/images/shopping-cart.svg'

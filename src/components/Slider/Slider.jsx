@@ -4,7 +4,7 @@ import { nextSlide, prevSlide, dotSlide } from 'reducers/sliderSlice';
 import { useSelector, useDispatch } from 'react-redux'
 import { sliderData } from 'assets/data/Data';
 // import styled from 'styled-components';
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components/macro';
 
 
 const Slider = () => {
@@ -16,17 +16,17 @@ const Slider = () => {
       <div>
         {sliderData.map((item, index) => {
           return (
-            <SliderItem isActive={parseInt(item.id) === slideIndex} key={item.id}>
+            <SliderItem isActive={parseInt(item.id, 10) === slideIndex} key={item.id}>
               <div>
-                {parseInt(item.id) === slideIndex && (
+                {parseInt(item.id, 10) === slideIndex && (
                   <SliderImage src={item.img} alt="slider photos" />
                 )}
               </div>
-              <div>
-                <ItemCaption>
-                  {parseInt(item.id) === slideIndex && item.text}
-                </ItemCaption>
-              </div>
+              <TextContainer>
+                <Text>
+                  {parseInt(item.id, 10) === slideIndex && item.text}
+                </Text>
+              </TextContainer>
             </SliderItem>
           )
         })}
@@ -39,8 +39,7 @@ const Slider = () => {
             <div key={dot.id}>
               <Dot
                 isActive={index === slideIndex}
-                onClick={() => dispatch(dotSlide(index))}
-              />
+                onClick={() => dispatch(dotSlide(index))} />
             </div>
           ))}
         </DotContainer>
@@ -48,8 +47,7 @@ const Slider = () => {
         <div>
           <ArrowButton
             onClick={() => dispatch(nextSlide(slideIndex + 1))}
-            style={{ top: '50%', right: '10px' }}
-          >
+            style={{ top: '50%', right: '10px' }}>
             <ArrowIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path
                 strokeLinecap="round"
@@ -62,13 +60,12 @@ const Slider = () => {
           <ArrowButton
             onClick={() => dispatch(prevSlide(slideIndex - 1))}
             style={{ top: '50%', left: '10px' }}
-          >
+            S>
             <ArrowIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M15.75 19.5L8.25 12l7.5-7.5"
-              />
+                d="M15.75 19.5L8.25 12l7.5-7.5" />
             </ArrowIcon>
           </ArrowButton>
         </div>
@@ -107,21 +104,21 @@ const ItemCaption = styled.p`
 //
 
 const SliderContainer = styled.div`
-  position: relative;
+  /* position: relative; */
 `;
 
 const DotContainer = styled.div`
   display: flex;
   position: absolute;
-  bottom: 12px;
+  bottom: 100px;
   left: 45%;
 `;
 
 const Dot = styled.div`
   margin-right: 4px;
-  background-color: ${(props) => (props.isActive ? '#34D399' : '#ffffff')};
+  background-color: ${(props) => (props.isActive ? '#34D399' : 'gray')};
   border-radius: 9999px;
-  padding: 2px;
+  padding: 10px;
   cursor: pointer;
 `;
 
@@ -146,4 +143,22 @@ const ArrowIcon = styled.svg`
   height: 80px;
   stroke-width: 0.5;
   stroke: beige;
+`;
+
+const TextContainer = styled.div`
+  position: absolute;
+  top: 44px;
+  left: 25%;
+  right: 25%;
+  margin: auto;
+`;
+
+const Text = styled.p`
+  text-align: center;
+  color: gray;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: normal;
+  line-height: 1;
 `;
