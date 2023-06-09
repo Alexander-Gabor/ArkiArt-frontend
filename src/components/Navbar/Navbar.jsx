@@ -64,7 +64,7 @@ const IconContainer = styled.div`
 
 const Icon = styled.img`
   align-self: center;
-  padding: 7px;
+  padding: 2px;
   height: 20px;
   width: 100%;
   cursor: pointer
