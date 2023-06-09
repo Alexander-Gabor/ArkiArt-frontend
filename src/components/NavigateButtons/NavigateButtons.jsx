@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components/macro';
-import { filterItems } from 'reducers/itemsSlice';
+import { filterProducts } from 'reducers/productsSlice';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import MainImage from '../../assets/images/Heroimage.jpg';
@@ -22,12 +22,12 @@ const NavigateButtons = () => {
         {buttons.map((button) => {
           return (
             <div key={button} className="navigate-button">
-              <Link to={`/filteredItems/${button}`}>
+              <Link to={`/filteredProducts/${button}`}>
                 <NavButton
                   type="button"
                   color="gray"
                   size="lg"
-                  onClick={() => dispatch(filterItems(button))}>{button}
+                  onClick={() => dispatch(filterProducts(button))}>{button}
                 </NavButton>
               </Link>
             </div>

@@ -6,7 +6,6 @@ import { sliderData } from 'assets/data/Data';
 // import styled from 'styled-components';
 import styled, { css } from 'styled-components/macro';
 
-
 const Slider = () => {
   const slideIndex = useSelector((state) => state.slider.value)
   console.log('slideIndex', slideIndex)
@@ -52,8 +51,7 @@ const Slider = () => {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
+                d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </ArrowIcon>
           </ArrowButton>
 

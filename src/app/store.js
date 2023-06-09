@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import slideReducer from '../reducers/sliderSlice'
-import itemsReducer from '../reducers/itemsSlice'
+import productsReducer from '../reducers/productsSlice'
 
 export const store = configureStore({
   reducer: {
     slider: slideReducer,
-    items: itemsReducer
+    products: productsReducer
   }
 });

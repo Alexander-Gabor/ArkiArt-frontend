@@ -2,7 +2,8 @@ import React from 'react'
 import Main from 'components/Main/Main'
 import { useSelector } from 'react-redux';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import FilteredItems from 'components/FilteredItems/FilteredItems';
+import FilteredProducts from 'components/FilteredProducts/FilteredProducts';
+import SingleProduct from 'components/FilteredProducts/SingleProduct';
 
 export const App = () => {
   return (
@@ -10,7 +11,8 @@ export const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/filteredItems/:type" element={<FilteredItems />} />
+          <Route path="/filteredProducts/:type" element={<FilteredProducts />} />
+          <Route path="/filteredProducts/:type/:id" element={<SingleProduct />} />
         </Routes>
       </BrowserRouter>
     </div>

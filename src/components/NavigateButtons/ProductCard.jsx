@@ -2,13 +2,14 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import styled from 'styled-components/macro';
 import { useDispatch } from 'react-redux';
+import { singleProduct } from '../../reducers/productsSlice';
 
-const ItemCard = ({ id, name, text, img, price, colors }) => {
+const ProductCard = ({ id, name, text, img, price, color }) => {
   const dispatch = useDispatch();
   const { type } = useParams();
   return (
     <StyledLink to={`/filteredProducts/${type}/${id}`}>
-      <StyledCard onClick={() => dispatch(singleItem(id))}>
+      <StyledCard onClick={() => dispatch(singleProduct(id))}>
         <StyledCardHeader>
           <StyledImage src={img} alt="img-blur-shadow" />
         </StyledCardHeader>
@@ -19,7 +20,7 @@ const ItemCard = ({ id, name, text, img, price, colors }) => {
         <StyledCardFooter>
           <StyledTypography variant="small">{price}$</StyledTypography>
           <div>
-            {colors?.map((color, index) => (
+            {color?.map((color, name) => (
               <StyledColorMarker
                 key={name}
                 style={{ backgroundColor: color }} />
@@ -31,7 +32,7 @@ const ItemCard = ({ id, name, text, img, price, colors }) => {
   )
 }
 
-export default ItemCard;
+export default ProductCard;
 
 const StyledLink = styled(Link)`
   /* Add your custom styles here */
