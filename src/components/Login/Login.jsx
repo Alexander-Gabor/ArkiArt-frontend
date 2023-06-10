@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components/macro';
 import { API_URL } from '../../utils/urls'
-// import user from 'reducers/user';
-// import ImageBackground from '../img/landing_image.jpg'
+import user from '../../reducers/user'
+// import Background from
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -12,13 +12,15 @@ const Login = () => {
   const [mode, setMode] = useState('login');
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const accessToken = useSelector(store => store.user.accessToken);
-  const error = useSelector(store => store.user.error);
+  const accessToken = useSelector((state) => state.user.accessToken);
+  //   const accessToken = useSelector((store) => store.user && store.user.accessToken);
+
+  const error = useSelector((state) => state.user.error);
   useEffect(() => {
     if (accessToken) {
       navigate('/')
     }
-  }, [accessToken]);
+  }, [accessToken, navigate]);
 
   const onFormSubmit = (event) => {
     event.preventDefault();
@@ -27,11 +29,11 @@ const Login = () => {
       headers: {
         'Content-type': 'application/json'
       },
-      body: JSON.stringify({ username: username, password: password })
+      body: JSON.stringify({ username, password })
     }
     fetch(API_URL(mode), options)
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         if (data.success) {
           console.log(data)
           dispatch(user.actions.setAccessToken(data.response.accessToken));
@@ -79,7 +81,7 @@ const Login = () => {
               value={username}
               minLength="2"
               maxLength="14"
-              onChange={e => setUsername(e.target.value)} />
+              onChange={(e) => setUsername(e.target.value)} />
           </LabelForm>
           <LabelForm htmlFor="password">Password
             <input
@@ -92,14 +94,15 @@ const Login = () => {
           </LabelForm>
           <SubmitButton
             type="submit"
-            disabled={username.length < 2 || password.length < 8}
-          >{(mode === 'register') ? 'Register' : 'Login'}</SubmitButton>
+            disabled={username.length < 2 || password.length < 8}>
+            {(mode === 'register') ? 'Register' : 'Login'}
+          </SubmitButton>
         </StyledForm>
         {error !== null && mode === 'register' && (<ErrorMessage>Sorry, user already exists.</ErrorMessage>)}
         {error !== null && mode === 'login' && (<ErrorMessage>Pls make sure that you are a registered user and that you have filled in the correct login information.</ErrorMessage>)}
       </InnerWrapper>
       <BackgroundContainer>
-        <BackgroundImg src={ImageBackground} />
+        <BackgroundImg src={Background} />
       </BackgroundContainer>
     </StyledMainWrapper>
   );
