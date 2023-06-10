@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components/macro';
 import { API_URL } from '../../utils/urls'
-import user from '../../reducers/user'
+// import user from '../../reducers/user'
+import { setAccessToken, setUsername, setUserId, setError } from '../../reducers/user';
+
 // import Background from
 
 const Login = () => {
@@ -36,15 +38,15 @@ const Login = () => {
       .then((data) => {
         if (data.success) {
           console.log(data)
-          dispatch(user.actions.setAccessToken(data.response.accessToken));
-          dispatch(user.actions.setUsername(data.response.username));
-          dispatch(user.actions.setUserId(data.response.id));
-          dispatch(user.actions.setError(null));
+          dispatch(setAccessToken(data.response.accessToken));
+          dispatch(setUsername(data.response.username));
+          dispatch(setUserId(data.response.id));
+          dispatch(setError(null));
         } else {
-          dispatch(user.actions.setAccessToken(null));
-          dispatch(user.actions.setUsername(null));
-          dispatch(user.actions.setUserId(null));
-          dispatch(user.actions.setError(data.response));
+          dispatch(setAccessToken(null));
+          dispatch(setUsername(null));
+          dispatch(setUserId(null));
+          dispatch(setError(data.response));
         }
       })
   }
@@ -53,8 +55,8 @@ const Login = () => {
     <StyledMainWrapper>
       <InnerWrapper>
         <div>
-          <StyledHeader>Join with good vibes!</StyledHeader>
-          <SignUpText>Sign up and share your best surf recommendations</SignUpText>
+          <StyledHeader>Join us!</StyledHeader>
+          <SignUpText>Sign up below!</SignUpText>
         </div>
         <StyledForm onSubmit={onFormSubmit}>
           <RadioButtonWrapper>
@@ -101,9 +103,9 @@ const Login = () => {
         {error !== null && mode === 'register' && (<ErrorMessage>Sorry, user already exists.</ErrorMessage>)}
         {error !== null && mode === 'login' && (<ErrorMessage>Pls make sure that you are a registered user and that you have filled in the correct login information.</ErrorMessage>)}
       </InnerWrapper>
-      <BackgroundContainer>
+      {/* <BackgroundContainer>
         <BackgroundImg src={Background} />
-      </BackgroundContainer>
+      </BackgroundContainer> */}
     </StyledMainWrapper>
   );
 }
