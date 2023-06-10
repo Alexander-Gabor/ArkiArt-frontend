@@ -9,7 +9,7 @@ import { setAccessToken, setUsername, setUserId, setError } from '../../reducers
 // import Background from
 
 const Login = () => {
-  const [username, setUsername] = useState('');
+  const [formUsername, setFormUsername] = useState('');
   const [password, setPassword] = useState('');
   const [mode, setMode] = useState('login');
   const dispatch = useDispatch();
@@ -31,7 +31,7 @@ const Login = () => {
       headers: {
         'Content-type': 'application/json'
       },
-      body: JSON.stringify({ username, password })
+      body: JSON.stringify({ username: formUsername, password })
     }
     fetch(API_URL(mode), options)
       .then((response) => response.json())
@@ -80,10 +80,10 @@ const Login = () => {
               type="text"
               id="username"
               placeholder="At least 2 characters"
-              value={username}
+              value={formUsername}
               minLength="2"
               maxLength="14"
-              onChange={(e) => setUsername(e.target.value)} />
+              onChange={(e) => setFormUsername(e.target.value)} />
           </LabelForm>
           <LabelForm htmlFor="password">Password
             <input
@@ -96,7 +96,7 @@ const Login = () => {
           </LabelForm>
           <SubmitButton
             type="submit"
-            disabled={username.length < 2 || password.length < 8}>
+            disabled={formUsername.length < 2 || password.length < 8}>
             {(mode === 'register') ? 'Register' : 'Login'}
           </SubmitButton>
         </StyledForm>
