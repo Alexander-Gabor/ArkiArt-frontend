@@ -40,7 +40,7 @@ const TypeText = styled.h1`
 `
 const StyledItemCard = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2em;
     justify-content: center;
 `

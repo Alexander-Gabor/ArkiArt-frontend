@@ -50,6 +50,7 @@ const SingleProduct = () => {
                     addToCart({
                       id: item.id,
                       name: item.name,
+                      img: item.img,
                       color,
                       price: item.price,
                       amount: 1,

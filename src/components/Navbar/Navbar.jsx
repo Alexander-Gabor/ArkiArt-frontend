@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components/macro';
 import Logo from '../../assets/images/arkiart-logo4.png';
 import Heart from '../../assets/images/heart-svg.svg';
 import Shopping from '../../assets/images/shopping-cart.svg'
+import Cart from '../Cart/Cart'
+import { NavLink, useNavigate } from 'react-router-dom';
+// import Dropdown from '../HamburgerMenu/Dropdown';
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true)
+  }
+
+  const navigate = useNavigate();
+  const handleLogInClick = () => {
+    navigate('/Login')
+  }
+
   return (
     <>
       <StyledNavbar>
@@ -15,17 +29,18 @@ const Navbar = () => {
           <LogoContainer src={Logo} alt="store" />
         </div>
         <ButtonsContainer>
-          <StyledButton type="button">
-            Logout
+          <StyledButton type="button" onClick={handleLogInClick}>
+            Sign in
           </StyledButton>
           <IconContainer>
             <Icon src={Heart} alt="heart icon" />
           </IconContainer>
           <p>Wishlist</p>
           <IconContainer>
-            <Icon src={Shopping} alt="shopping icon" />
+            <Icon src={Shopping} alt="shopping icon" onClick={handleOpen} />
           </IconContainer>
           <p>Cart</p>
+          <div>{ open && <Cart openModal={open} setOpen={setOpen} />}</div>
         </ButtonsContainer>
       </StyledTabsContainer>
     </>

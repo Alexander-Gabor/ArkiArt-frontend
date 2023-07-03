@@ -19,13 +19,13 @@ const ProductCard = ({ id, name, text, img, price, color }) => {
         </StyledCardBody>
         <StyledCardFooter>
           <StyledTypography variant="small">{price}$</StyledTypography>
-          <div>
+          <ColorMarkerContainer>
             {color?.map((color, name) => (
               <StyledColorMarker
                 key={name}
                 style={{ backgroundColor: color }} />
             ))}
-          </div>
+          </ColorMarkerContainer>
         </StyledCardFooter>
       </StyledCard>
     </StyledLink>
@@ -42,22 +42,27 @@ const StyledLink = styled(Link)`
 `;
 
 const StyledCard = styled.div`
+  padding: 10px;
+  margin: 0 auto;
   width: 24rem; /* Equivalent to w-96 */
+  position: relative;
+  background-color: #0001;
 `;
 
 const StyledCardHeader = styled.div`
   position: relative;
-  height: 24rem; /* Equivalent to h-96 */
+  /* height: 24rem; Equivalent to h-96 */
   background-color: blue; /* Equivalent to color="blue" */
 `;
 
 const StyledImage = styled.img`
   height: 100%;
-  width: 100%;
+  width: fit-content;
 `;
 
 const StyledCardBody = styled.div`
   text-align: center;
+  padding: 2px;
 `;
 
 const StyledTypography = styled.p`
@@ -73,10 +78,19 @@ const StyledCardFooter = styled.div`
   border-top: 1px solid #e2e8f0; /* Equivalent to divider */
 `;
 
+const ColorMarkerContainer = styled.div`
+  display: flex;
+  flex-direction: row; 
+`
+
 const StyledColorMarker = styled.i`
   margin-top: 3px; /* Equivalent to mt-[3px] */
   border-radius: 9999px; /* Equivalent to rounded-full */
   padding: 0.5rem; /* Equivalent to p-2 */
   margin-right: 1rem; /* Equivalent to mr-4 */
   text-decoration: none;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
 `;

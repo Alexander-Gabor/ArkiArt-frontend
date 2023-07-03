@@ -5,8 +5,8 @@ import Image4 from '../images/IMG_4.jpg'
 
 //
 
-import Item1 from '../images/item (1).jpg'
-import Item2 from '../images/item (2).jpg'
+import ToteBag1 from '../images/totebag1.jpg'
+import ToteBag2 from '../images/totebag2.jpg'
 import Item3 from '../images/item (3).jpg'
 import Item4 from '../images/item (4).jpg'
 import Item5 from '../images/item (5).jpg'
@@ -41,21 +41,21 @@ export const sliderData = [
 export const storeData = [
   {
     id: '1',
-    img: Item1,
-    name: 'Casual T-Shirt 1',
-    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
-    type: 'Merch',
-    size: ['XL', 'L', 'M', 'S'],
+    img: ToteBag1,
+    name: 'Tote-ally deconstructed 2023',
+    text: 'Inspired by the aftermath of the fire that demolished Stockholm\'s Tre Kronor castle in 1697',
+    type: 'Tote bags',
+    // size: ['XL', 'L', 'M', 'S'],
     color: ['black', 'gray', 'green'],
-    gender: 'male',
+    // gender: 'male',
     price: 45
   },
   {
     id: '2',
-    img: Item2,
+    img: ToteBag2,
     name: 'Casual T-Shrit 2',
     text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
-    type: 'Merch',
+    type: 'Tote bags',
     size: ['M', 'L', 'XL'],
     color: ['black', 'red', 'brown'],
     gender: 'male',
@@ -66,7 +66,7 @@ export const storeData = [
     img: Item3,
     name: 'Casual T-Shrit 3',
     text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
-    type: 'Cool nonsense',
+    type: 'Tote bags',
     size: ['L', 'XL'],
     color: ['brown', 'gray', 'yellow'],
     gender: 'female',
@@ -77,7 +77,7 @@ export const storeData = [
     img: Item4,
     name: 'Casual T-Shrit 4',
     text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
-    type: 'T-Shirts',
+    type: 'Tote bags',
     size: ['M', 'L', 'XL'],
     color: ['gray', 'orange', 'blue'],
     gender: 'female',

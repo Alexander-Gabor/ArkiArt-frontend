@@ -8,7 +8,7 @@ import MainImage from '../../assets/images/Heroimage.jpg';
 const NavigateButtons = () => {
   const buttons = [
     'Wall art',
-    'Tote-bags',
+    'Tote bags',
     'Notebooks',
     'Accessories',
     'Merch',

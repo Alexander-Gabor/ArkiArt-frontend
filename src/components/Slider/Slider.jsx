@@ -79,6 +79,8 @@ const SliderImage = styled.img`
     padding: 15px;
     height: 600px;
     width: 80%
+
+    
 `
 
 const SliderItem = styled.div`
