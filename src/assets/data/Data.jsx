@@ -7,13 +7,16 @@ import Image4 from '../images/IMG_4.jpg'
 
 import ToteBag1 from '../images/totebag1.jpg'
 import ToteBag2 from '../images/totebag2.jpg'
-import Item3 from '../images/item (3).jpg'
-import Item4 from '../images/item (4).jpg'
-import Item5 from '../images/item (5).jpg'
-import Item6 from '../images/item (6).jpg'
-import Item7 from '../images/item (7).jpg'
-import Item8 from '../images/item (8).jpg'
-import Item9 from '../images/item (9).jpg'
+import ToteBag3 from '../images/totebag3.jpg'
+import ToteBag4 from '../images/totebag4.jpg'
+import TShirt1 from '../images/t-shirt1.jpg'
+import TShirt2 from '../images/t-shirt_2.jpg'
+import TShirt3 from '../images/t-shirt_3.jpg'
+import TShirt4 from '../images/t-shirt_4.jpg'
+import WallArt1 from '../images/wallart1.jpg'
+import WallArt2 from '../images/wallart2.jpg'
+import WallArt3 from '../images/wallart3.jpg'
+import WallArt4 from '../images/wallart4.jpg'
 
 export const sliderData = [
   {
@@ -63,7 +66,7 @@ export const storeData = [
   },
   {
     id: '3',
-    img: Item3,
+    img: ToteBag3,
     name: 'Casual T-Shrit 3',
     text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
     type: 'Tote bags',
@@ -74,7 +77,7 @@ export const storeData = [
   },
   {
     id: '4',
-    img: Item4,
+    img: ToteBag4,
     name: 'Casual T-Shrit 4',
     text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
     type: 'Tote bags',
@@ -85,18 +88,18 @@ export const storeData = [
   },
   {
     id: '5',
-    img: Item5,
+    img: TShirt1,
     name: 'Casual T-Shrit 5',
     text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
     type: 'T-Shirts',
     size: ['M', 'L', 'XL'],
-    color: ['black', 'brown', 'blue'],
+    color: ['pink', 'salmon', 'white'],
     gender: 'female',
     price: 15
   },
   {
     id: '6',
-    img: Item6,
+    img: TShirt2,
     name: 'Casual T-Shrit 6',
     text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
     type: 'T-Shirts',
@@ -107,7 +110,7 @@ export const storeData = [
   },
   {
     id: '7',
-    img: Item7,
+    img: TShirt3,
     name: 'Casual T-Shrit 7',
     text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
     type: 'T-Shirts',
@@ -118,24 +121,59 @@ export const storeData = [
   },
   {
     id: '8',
-    img: Item8,
+    img: TShirt4,
     name: 'Casual T-Shrit 8',
     text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
     type: 'T-Shirts',
     size: ['M', 'XL'],
-    color: ['gray', 'red', 'blue'],
+    color: ['salmon', 'pink', 'tomato'],
     gender: 'male',
     price: 35
   },
 
   {
     id: '9',
-    img: Item9,
+    img: WallArt1,
     name: 'Casual Hoodie 1',
     text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
-    type: 'Hoodies',
+    type: 'Wall art',
     size: ['S', 'L', 'XL'],
-    color: ['blue', 'red', 'green'],
+    color: ['white', 'brown', 'black'],
+    gender: 'female',
+    price: 85
+  },
+
+  {
+    id: '10',
+    img: WallArt2,
+    name: 'Casual Hoodie 1',
+    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    type: 'Wall art',
+    size: ['S', 'L', 'XL'],
+    color: ['white', 'brown', 'black'],
+    gender: 'female',
+    price: 85
+  },
+
+  {
+    id: '11',
+    img: WallArt3,
+    name: 'Casual Hoodie 1',
+    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    type: 'Wall art',
+    size: ['S', 'L', 'XL'],
+    color: ['white', 'brown', 'black'],
+    gender: 'female',
+    price: 85
+  },
+  {
+    id: '12',
+    img: WallArt4,
+    name: 'Casual Hoodie 1',
+    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    type: 'Wall art',
+    size: ['S', 'L', 'XL'],
+    color: ['white', 'brown', 'black'],
     gender: 'female',
     price: 85
   }]

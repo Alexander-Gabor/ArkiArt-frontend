@@ -44,7 +44,8 @@ const StyledLink = styled(Link)`
 const StyledCard = styled.div`
   padding: 10px;
   margin: 0 auto;
-  width: 24rem; /* Equivalent to w-96 */
+  width: 24rem; 
+  /* Equivalent to w-96 */
   position: relative;
   background-color: #0001;
 `;

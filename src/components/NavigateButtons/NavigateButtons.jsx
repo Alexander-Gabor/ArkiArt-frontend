@@ -10,7 +10,7 @@ const NavigateButtons = () => {
     'Wall art',
     'Tote bags',
     'Notebooks',
-    'Accessories',
+    'T-Shirts',
     'Merch',
     'Cool nonsense']
 

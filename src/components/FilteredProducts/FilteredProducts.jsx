@@ -41,6 +41,17 @@ const TypeText = styled.h1`
 const StyledItemCard = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     justify-content: center;
+
+    @media (min-width: 768px) {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    column-gap: 2em;
+    margin: 100px; */
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 `
