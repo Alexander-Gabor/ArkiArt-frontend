@@ -141,7 +141,7 @@ const RadioButtonWrapper = styled.div`
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column; 
-  width: 250px;
+  width: 300px;
   gap: 10px;
   padding: 10px;
   margin-bottom: 15px;

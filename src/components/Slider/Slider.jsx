@@ -16,11 +16,11 @@ const Slider = () => {
         {sliderData.map((item, index) => {
           return (
             <SliderItem isActive={parseInt(item.id, 10) === slideIndex} key={item.id}>
-              <div>
+              {/* <div> */}
                 {parseInt(item.id, 10) === slideIndex && (
                   <SliderImage src={item.img} alt="slider photos" />
                 )}
-              </div>
+              {/* </div> */}
               <TextContainer>
                 <Text>
                   {parseInt(item.id, 10) === slideIndex && item.text}
@@ -78,7 +78,9 @@ const SliderImage = styled.img`
     align-items: center;
     padding: 15px;
     height: 600px;
-    width: 80%
+    /* width: 80% */
+    width: 100%;
+    object-fit: cover;
 
     
 `
@@ -110,8 +112,11 @@ const SliderContainer = styled.div`
 const DotContainer = styled.div`
   display: flex;
   position: absolute;
-  bottom: 100px;
-  left: 45%;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  /* bottom: 100px;
+  left: 45%; */
 `;
 
 const Dot = styled.div`
@@ -139,8 +144,8 @@ const ArrowButton = styled.button`
 
 const ArrowIcon = styled.svg`
   fill: gray;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   stroke-width: 0.5;
   stroke: beige;
 `;

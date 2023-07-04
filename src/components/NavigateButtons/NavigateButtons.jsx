@@ -9,9 +9,9 @@ const NavigateButtons = () => {
   const buttons = [
     'Wall art',
     'Tote bags',
-    'Notebooks',
+    // 'Notebooks',
     'T-Shirts',
-    'Merch',
+    // 'Merch',
     'Cool nonsense']
 
   const dispatch = useDispatch()
@@ -45,6 +45,7 @@ export default NavigateButtons;
 
 const FlexContainer = styled.div`
   display: flex;
+  padding: 10px;
   position: relative;
   align-items: center;
   justify-content: space-around;
@@ -52,8 +53,10 @@ const FlexContainer = styled.div`
 `;
 const NavButton = styled.button`
   color: ${(props) => (props.color === 'gray' ? 'black' : 'inherit')};
-  font-size: ${(props) => (props.size === 'lg' ? '1.25rem' : 'inherit')};
+  font-size: ${(props) => (props.size === 'lg' ? '1rem' : 'inherit')};
   border: 1px solid ${(props) => (props.color === 'gray' ? 'gray' : 'inherit')};
+  border-radius: 4px;
+  padding: 4px;
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
