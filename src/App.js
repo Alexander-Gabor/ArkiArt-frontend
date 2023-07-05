@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import FilteredProducts from 'components/FilteredProducts/FilteredProducts';
 import SingleProduct from 'components/FilteredProducts/SingleProduct';
 import Login from 'components/Login/Login';
+import About from 'components/About/About';
 
 export const App = () => {
   // const cart = useSelector((state) => state.cart.cart);
@@ -24,6 +25,7 @@ export const App = () => {
           {/* <Route path="/" element={authUser ? <Main /> : <Login />} /> */}
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/about" element={<About />} />
           <Route path="/filteredProducts/:type" element={<FilteredProducts />} />
           <Route path="/filteredProducts/:type/:id" element={<SingleProduct />} />
         </Routes>

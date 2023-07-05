@@ -160,7 +160,7 @@ const TextContainer = styled.div`
 
 const Text = styled.p`
   text-align: center;
-  color: gray;
+  color: white;
   font-size: 2rem;
   font-weight: bold;
   font-family: 'Inter', sans-serif;
