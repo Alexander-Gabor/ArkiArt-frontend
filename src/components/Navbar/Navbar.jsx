@@ -37,11 +37,11 @@ const Navbar = () => {
           <IconContainer>
             <Icon src={Heart} alt="heart icon" />
           </IconContainer>
-          <p>Wishlist</p>
+          {/* <p>Wishlist</p> */}
           <IconContainer>
             <Icon src={Shopping} alt="shopping icon" onClick={handleOpen} />
           </IconContainer>
-          <p>Cart</p>
+          {/* <p>Cart</p> */}
           <div>{open && <Cart openModal={open} setOpen={setOpen} />}</div>
         </ButtonsContainer>
       </StyledTabsContainer>
@@ -82,7 +82,7 @@ const IconContainer = styled.div`
 const Icon = styled.img`
   align-self: center;
   padding: 2px;
-  height: 20px;
+  height: 25px;
   width: 100%;
   cursor: pointer
 `

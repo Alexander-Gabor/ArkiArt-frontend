@@ -12,8 +12,12 @@ const RightNav = ({ open }) => {
 
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li onClick={onClickGoToAbout}>About me</li>
+      <li>
+        <NavLink to="/home">Home </NavLink>
+      </li>
+      <li>
+        <NavLink to="/about">About me </NavLink>
+      </li>
       <li>Contact Us</li>
     </Ul>
   )
