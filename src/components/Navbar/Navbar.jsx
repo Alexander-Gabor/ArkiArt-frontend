@@ -60,10 +60,13 @@ const StyledNavbar = styled.div`
 const StyledTabsContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
   background-color: #fff;
   padding: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 768px) {
+    justify-content: space-around;
+  }
 `;
 
 const ButtonsContainer = styled.div`
