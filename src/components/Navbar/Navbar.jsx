@@ -72,6 +72,7 @@ const StyledTabsContainer = styled.div`
 const ButtonsContainer = styled.div`
   display: flex;
   justify-content: flex-end;
+  width: 50%;
 `;
 
 const LogoContainer = styled.img`
