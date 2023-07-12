@@ -76,12 +76,14 @@ const ButtonsContainer = styled.div`
 `;
 
 const LogoContainer = styled.img`
-  height: 50px;
+  height: 25px;
   width: 100%;
   padding-left: 50px;
 
   @media (min-width: 768px) {
     padding: 0px;
+    height: 50px;
+    width: 100%;
   }
 `
 
