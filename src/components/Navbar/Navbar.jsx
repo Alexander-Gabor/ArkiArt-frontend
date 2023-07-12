@@ -73,6 +73,11 @@ const ButtonsContainer = styled.div`
 const LogoContainer = styled.img`
   height: 50px;
   width: 100%;
+  padding-left: 50px;
+
+  @media (min-width: 768px) {
+    padding: 0px;
+  }
 `
 
 const IconContainer = styled.div`
@@ -81,13 +86,14 @@ const IconContainer = styled.div`
 
 const Icon = styled.img`
   align-self: center;
-  padding: 2px;
+  padding: 0 7px;
   height: 25px;
   width: 100%;
   cursor: pointer
 `
 
 const StyledButton = styled.button`
+  font-family: 'Poppins', sans-serif;
   background-color: #333;
   color: #fff;
   padding: 5px 10px;

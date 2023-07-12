@@ -13,15 +13,19 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <li>
-        <NavLink to="/home">Home </NavLink>
+        <StyledNavLink to="/home">Home </StyledNavLink>
       </li>
       <li>
-        <NavLink to="/about">About me </NavLink>
+        <StyledNavLink to="/about">About me </StyledNavLink>
       </li>
-      <li>Contact Us</li>
+      {/* <StyledNavLink>Contact Us</StyledNavLink> */}
     </Ul>
   )
 }
+
+const StyledNavLink = styled(NavLink)`
+  font-family: 'Poppins', sans-serif;
+`
 
 const Ul = styled.ul`
   list-style: none;

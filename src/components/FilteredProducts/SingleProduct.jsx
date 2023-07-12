@@ -75,13 +75,17 @@ export default SingleProduct;
 
 const Container = styled.div`
   display: flex;
+  justify-content: center;
+  margin: 25px 0;
 `
 
 const ProductCard = styled.div`
-background-color: tomato;
+  align-items: center;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px;
   padding: 1.5rem;
   border: 1px solid #e2e8f0;
   border-radius: 0.5rem;
@@ -124,7 +128,7 @@ const ProductDescription = styled.p`
 `;
 
 const ProductPrice = styled.span`
-  font-weight: bold;
+  font-style: italic;
 `;
 
 // const StyledTooltip = styled(Tooltip)`

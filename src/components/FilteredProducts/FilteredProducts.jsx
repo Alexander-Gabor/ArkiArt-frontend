@@ -37,10 +37,13 @@ export default FilteredProducts;
 
 const TypeText = styled.h1`
     color: black;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 40px;
 `
 const StyledItemCard = styled.div`
     display: flex;
     flex-direction: column;
+    padding: 10px;
     gap: 1em;
     justify-content: center;
 

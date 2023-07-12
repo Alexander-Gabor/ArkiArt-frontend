@@ -60,20 +60,20 @@ const Login = () => {
         </div>
         <StyledForm onSubmit={onFormSubmit}>
           <RadioButtonWrapper>
-            <label htmlFor="register">Register
+            <LabelText htmlFor="register">Register
               <input
                 type="radio"
                 id="register"
                 checked={mode === 'register'}
                 onChange={() => setMode('register')} />
-            </label>
-            <label htmlFor="login">Login
+            </LabelText>
+            <LabelText htmlFor="login">Login
               <input
                 type="radio"
                 id="login"
                 checked={mode === 'login'}
                 onChange={() => setMode('login')} />
-            </label>
+            </LabelText>
           </RadioButtonWrapper>
           <LabelForm htmlFor="username">Username
             <input
@@ -114,7 +114,7 @@ const StyledMainWrapper = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 `
 
 const InnerWrapper = styled.section`
@@ -141,7 +141,7 @@ const RadioButtonWrapper = styled.div`
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column; 
-  width: 300px;
+  width: 350px;
   gap: 10px;
   padding: 10px;
   margin-bottom: 15px;
@@ -154,6 +154,11 @@ const ErrorMessage = styled.p`
 const LabelForm = styled.label`
   display: flex;
   justify-content: space-between;
+`
+
+const LabelText = styled.label`
+  display: flex;
+  justify-content: space-evenly
 `
 
 const StyledHeader = styled.h1`

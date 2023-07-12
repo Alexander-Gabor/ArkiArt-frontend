@@ -37,7 +37,7 @@ export const sliderData = [
   {
     id: '3',
     img: Image4,
-    text: '....and MUCH more, coming soon'
+    text: '....and MUCH more coming SOON'
   }
 ];
 

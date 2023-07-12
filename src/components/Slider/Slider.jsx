@@ -17,9 +17,9 @@ const Slider = () => {
           return (
             <SliderItem isActive={parseInt(item.id, 10) === slideIndex} key={item.id}>
               {/* <div> */}
-                {parseInt(item.id, 10) === slideIndex && (
-                  <SliderImage src={item.img} alt="slider photos" />
-                )}
+              {parseInt(item.id, 10) === slideIndex && (
+                <SliderImage src={item.img} alt="slider photos" />
+              )}
               {/* </div> */}
               <TextContainer>
                 <Text>
@@ -76,7 +76,8 @@ export default Slider;
 
 const SliderImage = styled.img`
     align-items: center;
-    padding: 15px;
+    /* padding: 15px; */
+    margin: 5px 0 5px 0;
     height: 600px;
     /* width: 80% */
     width: 100%;
@@ -121,7 +122,7 @@ const DotContainer = styled.div`
 
 const Dot = styled.div`
   margin-right: 4px;
-  background-color: ${(props) => (props.isActive ? '#34D399' : 'gray')};
+  background-color: ${(props) => (props.isActive ? '#34D399' : 'rgb(24, 154, 180)')};
   border-radius: 9999px;
   padding: 10px;
   cursor: pointer;
@@ -131,7 +132,7 @@ const ArrowButton = styled.button`
   position: absolute;
   top: 50%;
   border: none;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border-radius: 9999px;
   padding: 2px;
   cursor: pointer;
@@ -143,11 +144,11 @@ const ArrowButton = styled.button`
 `;
 
 const ArrowIcon = styled.svg`
-  fill: gray;
+  fill: #000000cb;
   width: 50px;
   height: 50px;
   stroke-width: 0.5;
-  stroke: beige;
+  stroke: #00000088;
 `;
 
 const TextContainer = styled.div`
@@ -161,9 +162,17 @@ const TextContainer = styled.div`
 const Text = styled.p`
   text-align: center;
   color: white;
+  /* background-color: #00000032; */
+  backdrop-filter: blur(1px) saturate(70%);
+  height: 70%;
   font-size: 2rem;
   font-weight: bold;
   font-family: 'Inter', sans-serif;
   letter-spacing: normal;
-  line-height: 1;
+  /* line-height: 1; */
+  width: 90%;
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
 `;

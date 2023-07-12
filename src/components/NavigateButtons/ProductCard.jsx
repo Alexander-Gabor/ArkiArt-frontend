@@ -52,13 +52,15 @@ const StyledCard = styled.div`
 
 const StyledCardHeader = styled.div`
   position: relative;
-  /* height: 24rem; Equivalent to h-96 */
-  background-color: blue; /* Equivalent to color="blue" */
+  background-color: #0000ff8; 
 `;
 
 const StyledImage = styled.img`
   height: 100%;
   width: fit-content;
+  &:hover {
+    filter: brightness(0.7);
+  }
 `;
 
 const StyledCardBody = styled.div`
@@ -69,6 +71,8 @@ const StyledCardBody = styled.div`
 const StyledTypography = styled.p`
   margin-bottom: 0.5rem; /* Equivalent to mb-2 */
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 `;
 
 const StyledCardFooter = styled.div`

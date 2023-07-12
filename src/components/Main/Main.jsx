@@ -7,10 +7,8 @@ import Footer from 'components/Footer/Footer';
 const Main = () => {
   return (
     <div>
-      <Navbar />
       <Slider />
       <NavigateButtons />
-      <Footer />
     </div>
   )
 }

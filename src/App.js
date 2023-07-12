@@ -7,6 +7,9 @@ import FilteredProducts from 'components/FilteredProducts/FilteredProducts';
 import SingleProduct from 'components/FilteredProducts/SingleProduct';
 import Login from 'components/Login/Login';
 import About from 'components/About/About';
+import Footer from 'components/Footer/Footer'
+// import { Navbar } from '@material-tailwind/react';
+import Navbar from 'components/Navbar/Navbar';
 
 export const App = () => {
   // const cart = useSelector((state) => state.cart.cart);
@@ -21,14 +24,17 @@ export const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar />
         <Routes>
           {/* <Route path="/" element={authUser ? <Main /> : <Login />} /> */}
           <Route path="/" element={<Main />} />
+          <Route path="/home" element={<Main />} />
           <Route path="/login" element={<Login />} />
           <Route path="/about" element={<About />} />
           <Route path="/filteredProducts/:type" element={<FilteredProducts />} />
           <Route path="/filteredProducts/:type/:id" element={<SingleProduct />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )

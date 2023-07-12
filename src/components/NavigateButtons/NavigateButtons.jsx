@@ -49,7 +49,7 @@ const FlexContainer = styled.div`
   position: relative;
   align-items: center;
   justify-content: space-around;
-  margin-top: 8rem;
+  margin-top: 6rem;
 `;
 const NavButton = styled.button`
   color: ${(props) => (props.color === 'gray' ? 'black' : 'inherit')};
@@ -70,7 +70,7 @@ const StyledImage = styled.img`
   margin: 20px auto;
   display: block;
   height: 600px;
-  width: 70%;
+  width: 100%;
   border-radius: 0.375rem; /* Equivalent to rounded-md */
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15); /* Equivalent to shadow-lg shadow-gray-600 */
 `;

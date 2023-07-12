@@ -1,3 +1,5 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable max-len */
 /* eslint-disable react/jsx-fragments */
 /* eslint-disable react/jsx-no-useless-fragment */
 // import React, { Fragment, useState } from 'react';
@@ -141,7 +143,7 @@
 // export default Cart;
 
 import React, { Fragment, useState } from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import {
   Button,
   Dialog as MaterialDialog,
@@ -255,7 +257,7 @@ const Cart = ({ openModal, setOpen }) => {
             handler={() => setOpen(false)}
             animate={{
               mount: { scale: 1, y: 0 },
-              unmount: { scale: 0.9, y: -100 },
+              unmount: { scale: 0.9, y: -100 }
             }}
           >
             <DialogHeader>Shopping Bag</DialogHeader>

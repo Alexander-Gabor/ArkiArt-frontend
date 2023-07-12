@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import GitHubIcon from 'assets/images/github.svg'
+import LinkedInIcon from 'assets/images/linkedin.svg'
 
 const Footer = () => {
   return (
+    // <FooterContainer>
     <StyledFooter>
       <Wrapper>
         <Grid direction="column" align="center">
@@ -15,12 +18,21 @@ const Footer = () => {
               href="https://www.instagram.com"
               target="_blank"
               rel="noreferrer">
-              <img src="/instagram.svg" alt="instagram-icon" />
+              <img src={GitHubIcon} alt="instagram-icon" />
+            </Icon>
+          </Cell>
+          <Cell width={1 / 2} align="center">
+            <Icon
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer">
+              <img src={LinkedInIcon} alt="instagram-icon" />
             </Icon>
           </Cell>
         </Grid>
       </Wrapper>
     </StyledFooter>
+    // </FooterContainer>
   );
 };
 
@@ -38,11 +50,19 @@ const Icon = styled.a`
   justify-content: center;
 
   img {
-    width: 70%;
+    filter: brightness(2)
   }
 `;
 
+// const FooterContainer = styled.div`
+//     min-height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+// `
+
 const StyledFooter = styled.div`
+  margin-top: auto;
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,9 +76,9 @@ const StyledFooter = styled.div`
   }
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.div` 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   background-color: ${(props) => props.bgColor || 'transparent'};
   max-width: 1024px;
@@ -95,8 +115,8 @@ const Cell = styled.div`
 
 const Grid = styled.div`
   display: flex;
-  flex-direction: ${(props) => props.direction || 'flex-start'};
-  flex-wrap: wrap;
+  /* flex-direction: ${(props) => props.direction || 'flex-start'};
+  flex-wrap: wrap; */
   width: 100%;
   justify-content: ${(props) => props.justify || 'flex-start'};
   align-items: ${(props) => props.align || 'flex-start'};
