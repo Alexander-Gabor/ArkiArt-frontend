@@ -71,8 +71,8 @@ const StyledTabsContainer = styled.div`
 
 const ButtonsContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
-  width: 50%;
+  justify-content: space-around;
+  width: 65%;
 `;
 
 const LogoContainer = styled.img`
