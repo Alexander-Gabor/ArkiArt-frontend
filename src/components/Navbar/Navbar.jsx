@@ -71,7 +71,7 @@ const StyledTabsContainer = styled.div`
 
 const ButtonsContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   width: 50%;
 `;
 
