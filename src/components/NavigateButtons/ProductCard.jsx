@@ -1,3 +1,5 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable no-shadow */
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import styled from 'styled-components/macro';

@@ -1,14 +1,14 @@
 import React from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components/macro';
 
 const RightNav = ({ open }) => {
-  const navigate = useNavigate();
-  const onClickGoToAbout = () => {
-    setTimeout(() => {
-      setIsOpen(false);
-    }, 200);
-    navigate('/about');}
+  // const navigate = useNavigate();
+  // const onClickGoToAbout = () => {
+  //   setTimeout(() => {
+  //     setIsOpen(false);
+  //   }, 200);
+  //   navigate('/about');}
 
   return (
     <Ul open={open}>

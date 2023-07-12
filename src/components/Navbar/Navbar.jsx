@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components/macro';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Logo from '../../assets/images/arkiart-logo4.png';
 import Heart from '../../assets/images/heart-svg.svg';
 import Shopping from '../../assets/images/shopping-cart.svg'
@@ -103,6 +103,10 @@ const StyledButton = styled.button`
   width: 7em;
   max-height: 3em;
   align-self: center;
+
+  @media (max-width: 768px) {
+    width: 5em;
+  }
 `;
 
 export default Navbar;

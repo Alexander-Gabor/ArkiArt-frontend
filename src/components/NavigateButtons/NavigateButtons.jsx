@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components/macro';
+import styled from 'styled-components/macro';
 import { filterProducts } from 'reducers/productsSlice';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';

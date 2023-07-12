@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-fragments */
@@ -145,13 +146,13 @@
 import React, { Fragment, useState } from 'react';
 import styled from 'styled-components/macro';
 import {
+  Tooltip,
   Button,
   Dialog as MaterialDialog,
   DialogHeader,
   DialogBody,
-  DialogFooter,
+  DialogFooter
 } from '@material-tailwind/react';
-import { Tooltip } from '@material-tailwind/react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart } from '../../reducers/cartSlice';
 
@@ -258,8 +259,7 @@ const Cart = ({ openModal, setOpen }) => {
             animate={{
               mount: { scale: 1, y: 0 },
               unmount: { scale: 0.9, y: -100 }
-            }}
-          >
+            }}>
             <DialogHeader>Shopping Bag</DialogHeader>
             <DialogBody divider>
               <CartContainer>
@@ -283,15 +283,13 @@ const Cart = ({ openModal, setOpen }) => {
                       <div>
                         <Tooltip
                           content="Remove from the Cart"
-                          placement="bottom"
-                        >
+                          placement="bottom">
                           <Button
                             onClick={() => dispatch(removeFromCart(item))}
                             size="sm"
                             color="red"
-                            ripple={true}
-                            variant="filled"
-                          >
+                            ripple
+                            variant="filled">
                             Remove
                           </Button>
                         </Tooltip>
@@ -314,9 +312,8 @@ const Cart = ({ openModal, setOpen }) => {
             handler={() => setOpen(false)}
             animate={{
               mount: { scale: 1, y: 0 },
-              unmount: { scale: 0.9, y: -100 },
-            }}
-          >
+              unmount: { scale: 0.9, y: -100 }
+            }}>
             <DialogHeader>Shopping Bag</DialogHeader>
             <DialogBody divider>
               <EmptyCartContainer>

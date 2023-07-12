@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-shadow */
+/* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components/macro';

@@ -16,7 +16,7 @@ const FilteredProducts = () => {
       <TypeText>{type}</TypeText>
       <StyledItemCard>
         {products.filter((product) => product.type === type)
-          .map((product, name) => {
+          .map((product) => {
             return (
               <div key={product.name}>
                 <ProductCard
