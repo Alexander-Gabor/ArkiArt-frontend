@@ -4,7 +4,7 @@ import styled from 'styled-components/macro';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../../assets/images/arkiart-logo4.png';
 import Heart from '../../assets/images/heart-svg.svg';
-import Shopping from '../../assets/images/cartIcon.svg'
+import Shopping from '../../assets/images/shopping-bag.svg'
 import UserIcon from '../../assets/images/user2.svg'
 import Cart from '../Cart/Cart'
 import Burger from './Burger';
