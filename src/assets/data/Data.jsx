@@ -1,7 +1,7 @@
-import Image1 from '../images/IMG_1.jpg'
-import Image2 from '../images/IMG_2.jpg'
+import Image1 from '../images/IMG_22.jpg'
+import Image2 from '../images/tre-kr3.jpg'
 import Image3 from '../images/IMG_3.jpg'
-import Image4 from '../images/IMG_4.jpg'
+import Image4 from '../images/IMG_4444.jpg'
 
 //
 
@@ -22,7 +22,7 @@ export const sliderData = [
   {
     id: '0',
     img: Image1,
-    text: 'Graduations, weddings, funerals; this art is suitable for ALL occasions'
+    text: 'THE NEW TRE KRONOR COLLECTION - CELEBRATING THE LOST CASTLE OF GAMLA STAN'
   },
   {
     id: '1',

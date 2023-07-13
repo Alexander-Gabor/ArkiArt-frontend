@@ -155,11 +155,16 @@ const ErrorMessage = styled.p`
 const LabelForm = styled.label`
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 `
 
 const LabelText = styled.label`
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 `
 
 const StyledHeader = styled.h1`

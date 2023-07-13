@@ -153,10 +153,12 @@ const ArrowIcon = styled.svg`
 `;
 
 const TextContainer = styled.div`
+  display: flex;
   position: absolute;
+  justify-content: center;
   top: 44px;
-  left: 25%;
-  right: 25%;
+  /* left: 25%;
+  right: 25%; */
   margin: auto;
 `;
 
@@ -166,14 +168,16 @@ const Text = styled.p`
   /* background-color: #00000032; */
   backdrop-filter: blur(1px) saturate(70%);
   height: 70%;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
   font-family: 'Inter', sans-serif;
   letter-spacing: normal;
   /* line-height: 1; */
-  width: 90%;
+  width: 80%;
 
   @media (min-width: 768px) {
-    width: 80%;
+    width: 60%;
+    font-size: 30px;
+    font-weight: 700;
   }
 `;

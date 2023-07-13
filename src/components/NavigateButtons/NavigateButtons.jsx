@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 import { filterProducts } from 'reducers/productsSlice';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import MainImage from '../../assets/images/Heroimage.jpg';
+import MainImage from '../../assets/images/Heroimage3.jpg';
 
 const NavigateButtons = () => {
   const buttons = [
@@ -49,10 +49,10 @@ const FlexContainer = styled.div`
   position: relative;
   align-items: center;
   justify-content: space-around;
-  margin-top: 6rem;
+  margin-top: 4rem;
 `;
 const NavButton = styled.button`
-  color: ${(props) => (props.color === 'gray' ? 'black' : 'inherit')};
+  color: ${(props) => (props.color === '#34D399' ? 'black' : 'inherit')};
   font-size: ${(props) => (props.size === 'lg' ? '1rem' : 'inherit')};
   border: 1px solid ${(props) => (props.color === 'gray' ? 'gray' : 'inherit')};
   border-radius: 4px;
@@ -60,16 +60,21 @@ const NavButton = styled.button`
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
-  
+  /* &:hover {
+    background-color: ${(props) => (props.color === '#34D399' ? '#34D399' : 'inherit')};
+  } */
+
   &:hover {
-    background-color: ${(props) => (props.color === 'gray' ? 'gray' : 'inherit')};
+    background-color: rgba(24, 154, 180, 0.653);
+    color: white;
   }
 `;
 
 const StyledImage = styled.img`
   margin: 20px auto;
+  object-fit: cover;
   display: block;
-  height: 600px;
+  height: 700px;
   width: 100%;
   border-radius: 0.375rem; /* Equivalent to rounded-md */
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15); /* Equivalent to shadow-lg shadow-gray-600 */

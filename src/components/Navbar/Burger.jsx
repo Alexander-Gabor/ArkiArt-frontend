@@ -12,7 +12,7 @@ const Burger = () => {
         <div />
         <div />
       </StyledBurger>
-      <RightNav open={open} />
+      <RightNav open={open} setOpen={setOpen} />
     </>
   )
 }
@@ -20,8 +20,8 @@ const Burger = () => {
 export default Burger;
 
 const StyledBurger = styled.div`
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   position: ${({ open }) => (open ? 'fixed' : 'absolute')};;
   top: 45px;
   left: 20px;
@@ -35,7 +35,7 @@ const StyledBurger = styled.div`
   }
 
   div {
-    width: 2rem;
+    width: 1.5rem;
     height: 0.25rem;
     background-color: ${({ open }) => (open ? '#ccc' : '#333')};
     border-radius: 10px;

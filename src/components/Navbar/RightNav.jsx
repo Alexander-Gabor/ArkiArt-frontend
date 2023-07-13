@@ -2,30 +2,33 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components/macro';
 
-const RightNav = ({ open }) => {
-  // const navigate = useNavigate();
-  // const onClickGoToAbout = () => {
-  //   setTimeout(() => {
-  //     setIsOpen(false);
-  //   }, 200);
-  //   navigate('/about');}
+const RightNav = (props) => {
+  const { open, setOpen } = props;
+  // const [isOpen, setIsOpen] = useState(!open);
+
+  // const handleClose = () => {
+  //   setIsOpen(false);
+  // };
 
   return (
     <Ul open={open}>
       <li>
-        <StyledNavLink to="/home">Home </StyledNavLink>
+        <StyledNavLink to="/home" onClick={() => setOpen(!open)}>Home</StyledNavLink>
       </li>
       <li>
-        <StyledNavLink to="/about">About me </StyledNavLink>
+        <StyledNavLink to="/about" onClick={() => setOpen(!open)}>About me</StyledNavLink>
       </li>
-      {/* <StyledNavLink>Contact Us</StyledNavLink> */}
+      <li>
+        <StyledNavLink to="/filteredProducts/Wall%20art" onClick={() => setOpen(!open)}>Wall-art</StyledNavLink>
+      </li>
     </Ul>
-  )
-}
+  );
+};
 
 const StyledNavLink = styled(NavLink)`
   font-family: 'Poppins', sans-serif;
-`
+  font-weight: 300;
+`;
 
 const Ul = styled.ul`
   list-style: none;
@@ -45,7 +48,7 @@ const Ul = styled.ul`
     left: 0;
     height: 100vh;
     width: 300px;
-    padding-top: 3.5rem;
+    padding-top: 5.5rem;
     transition: transform 0.3s ease-in-out;
     z-index: 2;
 
@@ -53,6 +56,7 @@ const Ul = styled.ul`
       color: #fff;
     }
   }
-`;
+};
+`
 
 export default RightNav;

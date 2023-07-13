@@ -3,7 +3,8 @@ import styled from 'styled-components/macro';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../../assets/images/arkiart-logo4.png';
 import Heart from '../../assets/images/heart-svg.svg';
-import Shopping from '../../assets/images/shopping-cart.svg'
+import Shopping from '../../assets/images/cartIcon.svg'
+import UserIcon from '../../assets/images/user2.svg'
 import Cart from '../Cart/Cart'
 import Burger from './Burger';
 // import Dropdown from '../HamburgerMenu/Dropdown';
@@ -31,9 +32,9 @@ const Navbar = () => {
         </div>
         <ButtonsContainer>
           <Burger />
-          <StyledButton type="button" onClick={handleLogInClick}>
-            Sign in
-          </StyledButton>
+          <IconContainer type="button" onClick={handleLogInClick}>
+            <Icon src={UserIcon} alt="Login icon" />
+          </IconContainer>
           <IconContainer>
             <Icon src={Heart} alt="heart icon" />
           </IconContainer>
@@ -61,6 +62,7 @@ const StyledTabsContainer = styled.div`
   display: flex;
   align-items: center;
   background-color: #fff;
+  max-height: 65px;
   padding: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 
@@ -103,7 +105,7 @@ const Icon = styled.img`
   cursor: pointer
 `
 
-const StyledButton = styled.button`
+/* const StyledButton = styled.button`
   font-family: 'Poppins', sans-serif;
   background-color: #333;
   color: #fff;
@@ -111,14 +113,15 @@ const StyledButton = styled.button`
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 7em;
+  width: 5em;
+  height: 25px;
   max-height: 3em;
   align-self: center;
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     width: 5em;
   }
-`;
+`; */
 
 export default Navbar;
 
