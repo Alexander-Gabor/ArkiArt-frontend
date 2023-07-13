@@ -79,10 +79,10 @@ const ButtonsContainer = styled.div`
 `;
 
 const LogoContainer = styled.img`
-  height: 20px;
+  height: 30px;
   width: 100%;
   padding-left: 50px;
-  object-fit: cover;
+  object-fit: contain;
 
   @media (min-width: 768px) {
     padding: 0px;
