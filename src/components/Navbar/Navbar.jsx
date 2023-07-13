@@ -73,7 +73,7 @@ const StyledTabsContainer = styled.div`
 
 const ButtonsContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   width: 60%;
   @media (min-width: 768px) {
     justify-content: flex-end;
@@ -83,7 +83,7 @@ const ButtonsContainer = styled.div`
 const LogoContainer = styled.img`
   height: 30px;
   width: 100%;
-  padding-left: 50px;
+  padding-left: 35px;
   object-fit: contain;
 
   @media (min-width: 768px) {
