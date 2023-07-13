@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import styled from 'styled-components/macro';
 import { useNavigate } from 'react-router-dom';
@@ -35,9 +36,9 @@ const Navbar = () => {
           <IconContainer type="button" onClick={handleLogInClick}>
             <Icon src={UserIcon} alt="Login icon" />
           </IconContainer>
-          <IconContainer>
+          {/* <IconContainer>
             <Icon src={Heart} alt="heart icon" />
-          </IconContainer>
+          </IconContainer> */}
           {/* <p>Wishlist</p> */}
           <IconContainer>
             <Icon src={Shopping} alt="shopping icon" onClick={handleOpen} />
