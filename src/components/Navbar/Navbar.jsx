@@ -100,7 +100,7 @@ const IconContainer = styled.div`
 
 const Icon = styled.img`
   align-self: center;
-  padding: 0 3px;
+  padding: 0 2px;
   height: 25px;
   width: 100%;
   cursor: pointer;
