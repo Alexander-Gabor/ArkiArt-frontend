@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 import { filterProducts } from 'reducers/productsSlice';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import MainImage from '../../assets/images/Heroimage3.jpg';
+import MainImage from '../../assets/images/Heroimage4.jpg';
 
 const NavigateButtons = () => {
   const buttons = [
@@ -74,8 +74,12 @@ const StyledImage = styled.img`
   margin: 20px auto;
   object-fit: cover;
   display: block;
-  height: 700px;
+  height: 350px;
   width: 100%;
-  border-radius: 0.375rem; /* Equivalent to rounded-md */
-  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15); /* Equivalent to shadow-lg shadow-gray-600 */
+  border-radius: 0.375rem;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15);
+  
+  @media (min-width: 768px) {
+    height: 720px;
+  }
 `;

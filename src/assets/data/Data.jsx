@@ -1,6 +1,7 @@
-import Image1 from '../images/IMG_22.jpg'
-import Image2 from '../images/tre-kr3.jpg'
-import Image3 from '../images/IMG_3.jpg'
+/* eslint-disable max-len */
+import Image1 from '../images/tre-kr3.jpg'
+import Image2 from '../images/slide22.jpg'
+import Image3 from '../images/window.jpg'
 import Image4 from '../images/IMG_4444.jpg'
 
 //
@@ -17,6 +18,8 @@ import WallArt1 from '../images/wallart1.jpg'
 import WallArt2 from '../images/wallart2.jpg'
 import WallArt3 from '../images/wallart3.jpg'
 import WallArt4 from '../images/wallart4.jpg'
+import Boots from '../images/customized-boots.jpg'
+import PencilCase from '../images/pencil-case.jpg'
 
 export const sliderData = [
   {
@@ -27,12 +30,12 @@ export const sliderData = [
   {
     id: '1',
     img: Image2,
-    text: 'Custom boots for when you are ready to STOMP your way to the nearest supermarket!'
+    text: 'ART FOR WALLS - ARKIART 23'
   },
   {
     id: '2',
     img: Image3,
-    text: 'Are you a deep intellectual? This deep art is for you!'
+    text: 'LOOKING INWARD - 2023'
   },
   {
     id: '3',
@@ -46,18 +49,17 @@ export const storeData = [
     id: '1',
     img: ToteBag1,
     name: 'Tote-ally deconstructed 2023',
-    text: 'Inspired by the aftermath of the fire that demolished Stockholm\'s Tre Kronor castle in 1697',
+    // text: 'Inspired by the aftermath of the fire that demolished Stockholm\'s Tre Kronor castle in 1697',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
     type: 'Tote bags',
-    // size: ['XL', 'L', 'M', 'S'],
     color: ['black', 'gray', 'green'],
-    // gender: 'male',
     price: 45
   },
   {
     id: '2',
     img: ToteBag2,
-    name: 'Casual T-Shrit 2',
-    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    name: 'Tote bag 2',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
     type: 'Tote bags',
     size: ['M', 'L', 'XL'],
     color: ['black', 'red', 'brown'],
@@ -67,8 +69,8 @@ export const storeData = [
   {
     id: '3',
     img: ToteBag3,
-    name: 'Casual T-Shrit 3',
-    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    name: 'Tote bag 3',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
     type: 'Tote bags',
     size: ['L', 'XL'],
     color: ['brown', 'gray', 'yellow'],
@@ -78,8 +80,8 @@ export const storeData = [
   {
     id: '4',
     img: ToteBag4,
-    name: 'Casual T-Shrit 4',
-    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    name: 'Tote bag 4',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
     type: 'Tote bags',
     size: ['M', 'L', 'XL'],
     color: ['gray', 'orange', 'blue'],
@@ -89,8 +91,8 @@ export const storeData = [
   {
     id: '5',
     img: TShirt1,
-    name: 'Casual T-Shrit 5',
-    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    name: 'T-Shirt 1',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
     type: 'T-Shirts',
     size: ['M', 'L', 'XL'],
     color: ['pink', 'salmon', 'white'],
@@ -100,8 +102,8 @@ export const storeData = [
   {
     id: '6',
     img: TShirt2,
-    name: 'Casual T-Shrit 6',
-    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    name: 'T-Shirt 2',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
     type: 'T-Shirts',
     size: ['M', 'L', 'XL'],
     color: ['gray', 'purple', 'yellow'],
@@ -111,8 +113,8 @@ export const storeData = [
   {
     id: '7',
     img: TShirt3,
-    name: 'Casual T-Shrit 7',
-    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    name: 'T-Shirt 3',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
     type: 'T-Shirts',
     size: ['M', 'L', 'XL'],
     color: ['black', 'orange', 'blue'],
@@ -122,8 +124,8 @@ export const storeData = [
   {
     id: '8',
     img: TShirt4,
-    name: 'Casual T-Shrit 8',
-    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    name: 'T-Shirt 4',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
     type: 'T-Shirts',
     size: ['M', 'XL'],
     color: ['salmon', 'pink', 'tomato'],
@@ -134,8 +136,8 @@ export const storeData = [
   {
     id: '9',
     img: WallArt1,
-    name: 'Casual Hoodie 1',
-    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    name: 'Painting 1',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
     type: 'Wall art',
     size: ['S', 'L', 'XL'],
     color: ['white', 'brown', 'black'],
@@ -146,8 +148,8 @@ export const storeData = [
   {
     id: '10',
     img: WallArt2,
-    name: 'Casual Hoodie 1',
-    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    name: 'Painting 2',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
     type: 'Wall art',
     size: ['S', 'L', 'XL'],
     color: ['white', 'brown', 'black'],
@@ -158,8 +160,8 @@ export const storeData = [
   {
     id: '11',
     img: WallArt3,
-    name: 'Casual Hoodie 1',
-    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    name: 'Painting 3',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
     type: 'Wall art',
     size: ['S', 'L', 'XL'],
     color: ['white', 'brown', 'black'],
@@ -169,9 +171,31 @@ export const storeData = [
   {
     id: '12',
     img: WallArt4,
-    name: 'Casual Hoodie 1',
-    text: 'Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.',
+    name: 'Painting 4',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
     type: 'Wall art',
+    size: ['S', 'L', 'XL'],
+    color: ['white', 'brown', 'black'],
+    gender: 'female',
+    price: 85
+  },
+  {
+    id: '13',
+    img: Boots,
+    name: 'Custom boots V1',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
+    type: 'Cool nonsense',
+    size: ['S', 'L', 'XL'],
+    color: ['white', 'brown', 'black'],
+    gender: 'female',
+    price: 85
+  },
+  {
+    id: '14',
+    img: PencilCase,
+    name: 'Pencil Case V1',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui nisi, venenatis ac convallis id, vehicula ac massa. Morbi ut augue volutpat tortor pretium pharetra at vitae ante.',
+    type: 'Cool nonsense',
     size: ['S', 'L', 'XL'],
     color: ['white', 'brown', 'black'],
     gender: 'female',

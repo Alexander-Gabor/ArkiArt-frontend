@@ -100,10 +100,13 @@ const IconContainer = styled.div`
 
 const Icon = styled.img`
   align-self: center;
-  padding: 0 7px;
+  padding: 0 3px;
   height: 25px;
   width: 100%;
-  cursor: pointer
+  cursor: pointer;
+  @media (min-width: 768px) {
+    padding: 0 7px;
+  }
 `
 
 /* const StyledButton = styled.button`

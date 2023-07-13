@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import GitHubIcon from 'assets/images/github.svg'
 import LinkedInIcon from 'assets/images/linkedin.svg'
+import Smile from 'assets/images/smile.svg'
 
 const Footer = () => {
   return (
@@ -10,23 +11,28 @@ const Footer = () => {
       <Wrapper>
         <Grid direction="column" align="center">
           <Cell width={1 / 2} align="center">
-            <Logo src="/logo.svg" alt="logo-art" />
+            <Icon
+              href="https://alexandergabor.netlify.app/"
+              target="_blank"
+              rel="noreferrer">
+              <img src={Smile} alt="Portfolio-icon" />
+            </Icon>
           </Cell>
 
           <Cell width={1 / 2} align="center">
             <Icon
-              href="https://www.instagram.com"
+              href="https://github.com/Alexander-Gabor"
               target="_blank"
               rel="noreferrer">
-              <img src={GitHubIcon} alt="instagram-icon" />
+              <img src={GitHubIcon} alt="GitHub-icon" />
             </Icon>
           </Cell>
           <Cell width={1 / 2} align="center">
             <Icon
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/alexander-gabor-1485b4260/"
               target="_blank"
               rel="noreferrer">
-              <img src={LinkedInIcon} alt="instagram-icon" />
+              <img src={LinkedInIcon} alt="LinkedIn-icon" />
             </Icon>
           </Cell>
         </Grid>
@@ -38,13 +44,13 @@ const Footer = () => {
 
 export default Footer;
 
-const Logo = styled.img`
-  width: 6rem;
-`;
+// const Logo = styled.img`
+//   width: 6rem;
+// `;
 
 const Icon = styled.a`
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;

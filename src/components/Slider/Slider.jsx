@@ -19,7 +19,7 @@ const Slider = () => {
             <SliderItem isActive={parseInt(item.id, 10) === slideIndex} key={item.id}>
               {/* <div> */}
               {parseInt(item.id, 10) === slideIndex && (
-                <SliderImage src={item.img} alt="slider photos" />
+                <SliderImage src={item.img} alt="slider photos" onContextMenu={(e) => e.preventDefault()} />
               )}
               {/* </div> */}
               <TextContainer>
@@ -173,10 +173,10 @@ const Text = styled.p`
   font-family: 'Inter', sans-serif;
   letter-spacing: normal;
   /* line-height: 1; */
-  width: 80%;
+  width: 65%;
 
   @media (min-width: 768px) {
-    width: 60%;
+    width: 100%;
     font-size: 30px;
     font-weight: 700;
   }

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components/macro';
@@ -18,9 +19,9 @@ const RightNav = (props) => {
       <li>
         <StyledNavLink to="/about" onClick={() => setOpen(!open)}>About me</StyledNavLink>
       </li>
-      <li>
+      {/* <li>
         <StyledNavLink to="/filteredProducts/Wall%20art" onClick={() => setOpen(!open)}>Wall-art</StyledNavLink>
-      </li>
+      </li> */}
     </Ul>
   );
 };
