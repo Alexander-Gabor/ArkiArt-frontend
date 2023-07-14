@@ -82,7 +82,7 @@ const StackInfo = styled.p`
 
 const Links = styled.div`
   display: flex;
-  padding: 10px;
+  padding-bottom: 15px;
 
   a {
     margin-right: 16px;
