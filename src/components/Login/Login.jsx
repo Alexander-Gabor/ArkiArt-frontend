@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components/macro';
+import BoatGuy from 'assets/images/boat.png'
 import { API_URL } from '../../utils/urls'
 // import user from '../../reducers/user'
 import { setAccessToken, setUsername, setUserId, setError } from '../../reducers/user';
@@ -57,7 +58,7 @@ const Login = () => {
       <InnerWrapper>
         <div>
           <StyledHeader>Join us!</StyledHeader>
-          <SignUpText>Sign up below!</SignUpText>
+          <SignUpText>Sign up below</SignUpText>
         </div>
         <StyledForm onSubmit={onFormSubmit}>
           <RadioButtonWrapper>
@@ -107,6 +108,7 @@ const Login = () => {
       {/* <BackgroundContainer>
         <BackgroundImg src={Background} />
       </BackgroundContainer> */}
+      <SpinningWheel className="logo-image-user" src={BoatGuy} alt="spinning wheel" />
     </StyledMainWrapper>
   );
 }
@@ -171,7 +173,7 @@ const StyledHeader = styled.h1`
   font-size: 2.4rem;
   text-align: center;
   margin-bottom: 10px;
-  font-family: Urbanist;
+  font-family: Inter, sans-serif;
   font-weight: 400;
 `
 
@@ -179,7 +181,7 @@ const SignUpText = styled.h2`
   font-size: 2rem;
   color: gray;
   text-align: center;
-  font-family: Caveat;
+  font-family: Inter, sans-serif;
   font-weight: 300;
 `
 
@@ -221,6 +223,19 @@ const SubmitButton = styled.button`
     border: 2px solid #e3e4e6;
     color: white;
   }
+`
+
+const SpinningWheel = styled.img`
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+
+  &:hover {
+    cursor: pointer;
+    animation: rotation 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    }
 `
 
 export default Login;

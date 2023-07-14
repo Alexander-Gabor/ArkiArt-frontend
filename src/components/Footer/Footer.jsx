@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components/macro';
 import GitHubIcon from 'assets/images/github.svg'
@@ -37,6 +38,7 @@ const Footer = () => {
           </Cell>
         </Grid>
       </Wrapper>
+      <FooterText>© Alexander Gabor 2023. All rights reserved. Front-end + back-end, designed, and created all included artwork.</FooterText>
     </StyledFooter>
     // </FooterContainer>
   );
@@ -68,6 +70,7 @@ const Icon = styled.a`
 
 const StyledFooter = styled.div`
   margin-top: auto;
+  flex-direction: column;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
@@ -81,6 +84,19 @@ const StyledFooter = styled.div`
     font-family: 'Source Sans Pro', sans-serif;
   }
 `;
+
+const FooterText = styled.p`
+  color: white;
+  font-size: 12px;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  font-weight: 200;
+  padding-top: 25px;
+
+  @media (min-width: 768px) {
+    font-size: 14px
+  }
+`
 
 const Wrapper = styled.div` 
   display: flex;

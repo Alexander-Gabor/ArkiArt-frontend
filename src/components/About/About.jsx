@@ -11,11 +11,14 @@ const About = () => {
         <CardContent>
           <Title>Alexander Gabor</Title>
           <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan consequat lobortis. Phasellus at tellus magna. Quisque aliquet, justo vitae dapibus posuere, mi lectus ultricies lectus, vel vestibulum odio nisi et erat. Curabitur sagittis mi non felis tincidunt dictum.
+          A creative energetic front-end deveoloper with an extensive design experience and a versatile skillset. Armed with a wide range of abilities in development, softskills, and an eye for rich user interfaces. Alexander strives for excellence and thrives in cooperative environments.
           </Description>
+          <StackInfo>
+            JavaScript - React - Redux - Google Cloud - Netlify - Node.js - Express - MongoDB - TailwindCSS - Material UI - Unsplash
+          </StackInfo>
           <Links>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+            <a href="https://www.linkedin.com/in/alexander-gabor-1485b4260/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://alexandergabor.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
           </Links>
         </CardContent>
       </CardContainer>
@@ -35,6 +38,7 @@ const CardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 400px;
+  height: 90%;
   margin: 25px 0;
   border: 1px solid #cccccc9d;
   border-radius: 4px;
@@ -43,8 +47,8 @@ const CardContainer = styled.div`
 `;
 
 const ProfilePhoto = styled.img`
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
   border-radius: 50%;
 `;
@@ -64,12 +68,21 @@ const Title = styled.h2`
 
 const Description = styled.p`
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   font-size: 16px;
+  margin-bottom: 16px;
+`;
+const StackInfo = styled.p`
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
   margin-bottom: 16px;
 `;
 
 const Links = styled.div`
   display: flex;
+  padding: 10px;
 
   a {
     margin-right: 16px;

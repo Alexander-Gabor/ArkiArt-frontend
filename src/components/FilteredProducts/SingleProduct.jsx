@@ -48,7 +48,7 @@ const SingleProduct = () => {
                   variant="outlined"
                   ripple
                   data-tooltip-id="my-tooltip"
-                  data-tooltip-content="123...test!"
+                  data-tooltip-content="Added to cart!"
                   onClick={() => dispatch(
                     addToCart({
                       id: item.id,

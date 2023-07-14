@@ -36,9 +36,16 @@ const FilteredProducts = () => {
 export default FilteredProducts;
 
 const TypeText = styled.h1`
-    color: black;
+    color: #189AB4;;
     font-family: 'Poppins', sans-serif;
-    padding: 5px 40px;
+    font-weight: 200;
+    padding: 5px 20px;
+
+    @media (min-width: 768px) {
+      padding: 5px 40px;
+      font-size: 20px;
+      text-align: center;
+    }
 `
 const StyledItemCard = styled.div`
     display: flex;

@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import Image1 from '../images/tre-kr3.jpg'
+import Image1 from '../images/tre-kr4.jpg'
 import Image2 from '../images/slide22.jpg'
 import Image3 from '../images/window.jpg'
 import Image4 from '../images/IMG_4444.jpg'
